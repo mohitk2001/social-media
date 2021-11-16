@@ -1,0 +1,27 @@
+.header_container{
+    width: 100%;
+    background-image: linear-gradient(to right,#000,#294d4d) ;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.header{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.user_handle{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.user_handle>h2{
+    margin-left: 10px;
+}
+h2{
+    color: #ffff;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

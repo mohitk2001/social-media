@@ -1,0 +1,51 @@
+.landing_comp{
+    height: 95vh;
+    background: url("http://static.gulfnews.com/polopoly_fs/1.2149540!/image/1422399044.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    position: relative;
+}
+.color_overlay{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: #000;
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.color_overlay h1{
+    font-size: 40px;
+    font-weight: 500;
+    
+}
+.color_overlay>p{
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    z-index: 1;
+}
+
+.landing_register{
+   background: silver;
+   color: #023535;
+   border: none;
+   margin-right: 5px;
+   
+}
+.landing_login{
+    background:#004545;
+    border: none;
+    color: white;
+    margin-left: 5px;
+}
