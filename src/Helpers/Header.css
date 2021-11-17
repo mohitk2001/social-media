@@ -19,9 +19,14 @@
 .user_handle>h2{
     margin-left: 10px;
 }
-h2{
+.topHeader,.user_handle>h2{
     color: #ffff;
     font-weight: 500;
     margin-top: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+.user_handle>h2{
+    font-size: 18px;
 }
