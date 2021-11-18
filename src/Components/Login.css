@@ -9,7 +9,7 @@
     position: relative;
     top: 20px;
 }
-.login_content>h2{
+.login_content>.login_top>h2{
     color: #004646;
     font-size: 30px;
     font-weight: 500;
@@ -36,8 +36,21 @@
     color: white;
     height: 40px;
     width: 80px;
+    outline:none;
+    border: none;
+    cursor: pointer;
 }
 .login_content>p>strong{
     color: #004646;
     cursor: pointer;
+}
+.login_top{
+    display: flex;
+    align-items: center;
+
+}
+.login_icon{
+    color: #004646 !important;
+    font-size: 30px !important;
+    margin-right: 10px;
 }

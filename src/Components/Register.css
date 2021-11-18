@@ -1,0 +1,54 @@
+.register{
+    width: 100%;
+    background-color: #EEF7F7;
+    height: 93vh;
+}
+.register_content{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 20px;
+}
+.register_top{
+    display: flex;
+    align-items: center;
+}
+.register_icon{
+    color: #004646 !important;
+    font-size: 30px !important;
+    margin-right: 10px;
+}
+.register_content>p{
+    font-size: 15px;
+    margin-top: 15px;
+}
+.register_top>h2{
+    color: #004646;
+    font-size: 30px;
+    font-weight: 500;
+}
+.register_inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.register_inputs>input{
+    width: 80%;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid #8b9696;
+    padding: 15px;
+}
+.user_register_button{
+    background-color: #004646;
+    color: white;
+    height: 40px;
+    outline:none;
+    cursor: pointer;
+    border: none;
+    width: 80px;
+}
+.register_content>p>strong{
+    color: #004646;
+    cursor: pointer;
+}
