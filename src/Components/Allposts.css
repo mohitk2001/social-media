@@ -1,0 +1,63 @@
+.allposts{
+    width: 100%;
+    
+}
+.allposts_content{
+    width: 80%;
+    margin: auto;
+}
+.allposts_content>h1{
+    color: #004646;
+    font-weight: 500;
+   position: relative;
+   top: 20px;
+}
+.allposts_content>p{
+    margin-top: 20px;
+}
+.post_input_box{
+    width: 100%;
+    border: 1px solid lightgray;
+    display: flex;
+    margin-top: 20px;
+    height: 80px;
+}
+.input_avatar{
+    flex: 1;
+    background-color: #E8ECEF;
+    text-align: center ;
+    border-right: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input_avatar_icon{
+    font-size: 50px !important;
+}
+.input_field{
+    flex: 8;
+    margin-right: 25px;
+}
+.input_field>textarea{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    padding-left: 22px;
+    
+}
+.post_button{
+    background-color: #004646;
+    color: white;
+    height: 40px;
+    width: 80px;
+    outline:none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.allposts_content>p{
+    margin-top: 25px;
+    font-size: 20px;
+}

@@ -9,7 +9,7 @@ function Register() {
       <div className="register_content">
         <div className="register_top">
           <ExitToAppTwoToneIcon className="register_icon" />
-          <h2>Login</h2>
+          <h2>Register</h2>
         </div>
         <p>Join me and my friends on this great application!</p>
         <div className="register_inputs">

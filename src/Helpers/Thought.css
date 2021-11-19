@@ -1,0 +1,11 @@
+.thought{
+    background-image: linear-gradient(to right,gray,lightblue);
+    display: flex;
+    width: 100%;
+}
+.thought_icon{
+    flex: 3;
+}
+.thought_content{
+    flex: 9;
+}
