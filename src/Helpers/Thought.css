@@ -2,10 +2,25 @@
     background-image: linear-gradient(to right,gray,lightblue);
     display: flex;
     width: 100%;
+    justify-content: space-evenly;
+    margin-top: 20px;
 }
 .thought_icon{
     flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.thought_icon_avatar{
+    font-size: 40px !important;
+    
 }
 .thought_content{
     flex: 9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
