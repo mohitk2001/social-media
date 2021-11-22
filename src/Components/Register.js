@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import ExitToAppTwoToneIcon from "@material-ui/icons/ExitToAppTwoTone";
 import "./Register.css";
 import { useHistory } from "react-router";
+import axios from "../Helpers/axios";
 function Register() {
-    const history=useHistory();
+  const history = useHistory();
+  const [fullName, setfullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const registerUser = (e) => {
+    e.preventDefault();
+    const registerDetails={
+      name:fullName,
+      email:email,
+      password:password
+    }
+    axios
+      .post("/user/register",{registerDetails})
+      .then((res) => console.log(res))
+      .catch((e) => {
+        console.log(e);
+      });
+  };
   return (
     <div className="register">
       <div className="register_content">
@@ -13,12 +31,32 @@ function Register() {
         </div>
         <p>Join me and my friends on this great application!</p>
         <div className="register_inputs">
-          <input type="text" placeholder="Full name" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Password" />
+          <input
+            type="text"
+            placeholder="Full name"
+            value={fullName}
+            onChange={(e) => setfullName(e.target.value)}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
         </div>
-        <button className="user_register_button">Register</button>
-        <p>Already have an account? <strong onClick={()=>history.push("/login")}>Login</strong></p>
+        <button className="user_register_button" onClick={ registerUser}>
+          Register
+        </button>
+        <p>
+          Already have an account?{" "}
+          <strong onClick={() => history.push("/login")}>Login</strong>
+        </p>
       </div>
     </div>
   );
