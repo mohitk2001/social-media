@@ -15,7 +15,18 @@ function Login() {
     };
     axios
       .post("/user/login", { loginDetails })
-      .then((res) => console.log(res))
+      .then((res) =>{
+        if(res.data.error){
+          alert(res.data.error);
+          history.push("/register")
+        }
+        else if(res.data.Comberror){
+          alert(res.data.Comberror);
+        }
+        console.log(res)
+        localStorage.setItem("tokenKey",res.data.token)
+        history.push("/all_posts")
+      })
       .catch((e) => console.log(e));
   };
   return (

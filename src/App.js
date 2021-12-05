@@ -6,6 +6,7 @@ import Allposts from "./Components/Allposts";
 import Landing from "./Components/Landing";
 import Discussion from "./Components/Discussion";
 import Header from "./Helpers/Header";
+
 function App() {
   return (
     <Router>

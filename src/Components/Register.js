@@ -17,7 +17,10 @@ function Register() {
     }
     axios
       .post("/user/register",{registerDetails})
-      .then((res) => console.log(res))
+      .then((res) =>{
+        alert(res.data.msg);
+        history.push("/login");
+      })
       .catch((e) => {
         console.log(e);
       });
