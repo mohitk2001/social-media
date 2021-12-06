@@ -6,3 +6,12 @@ export const addUsers=(data)=>{
         }
     }
 }
+
+export const removeLoginStatus=(data)=>{
+    return {
+        type:"Logout",
+        payload:{
+            details:data
+        }
+    }
+}
