@@ -3,7 +3,7 @@ import { useHistory } from "react-router";
 import "./Login.css";
 import ExitToAppTwoToneIcon from "@material-ui/icons/ExitToAppTwoTone";
 import axios from "../Helpers/axios";
-import {addUsers} from "../Redux/action/index"
+import {addToken} from "../Redux/action/index"
 import { useDispatch } from "react-redux";
 function Login() {
   const history = useHistory();
@@ -27,9 +27,10 @@ function Login() {
           alert(res.data.Comberror);
         }
         console.log(res)
-        dispatch(addUsers(res.data.details))
+        dispatch(addToken(res.data.token))
         localStorage.setItem("tokenKey",res.data.token)
         history.push("/all_posts")
+        
       })
       .catch((e) => console.log(e));
   };

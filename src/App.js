@@ -11,25 +11,21 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <Header />
         <Switch>
           <Route exact path="/">
-            <Header />
             <Landing />
           </Route>
           <Route path="/register">
-            <Header />
             <Register />
           </Route>
           <Route path="/login">
-            <Header />
             <Login />
           </Route>
           <Route path="/all_posts">
-            <Header />
             <Allposts />
           </Route>
           <Route path="/posts/:post-id">
-            <Header />
             <Discussion />
           </Route>
         </Switch>

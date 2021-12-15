@@ -15,3 +15,11 @@ export const removeLoginStatus=(data)=>{
         }
     }
 }
+export const addToken=(data)=>{
+    return {
+        type:"Add_token",
+        payload:{
+            data:data
+        }
+    }
+}
